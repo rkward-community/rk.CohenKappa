@@ -3,6 +3,8 @@ ChangeLog for package rk.CohenKappa
 changes in version 0.01-8 (2015-06-29)
 unreleased:
   - this release is under devoplment
+changed:
+  - updated the generator script
 
 changes in version 0.01-7 (2015-03-14)
 fixed:
