@@ -4,6 +4,7 @@
 # *EXCEPT* for the last call, see below.
 
 require(rkwarddev)
+rkwarddev.required("0.07-4")
 
 local({
 # set the output directory to overwrite the actual plugin
@@ -11,6 +12,7 @@ output.dir <- tempdir()
 overwrite <- TRUE
 # if you set guess.getters to TRUE, the resulting code will need RKWard >= 0.6.0
 guess.getter <- TRUE
+rk.set.indent(by="  ")
 
 about.info <- rk.XML.about(
   name="rk.CohenKappa",
@@ -28,44 +30,58 @@ dependencies.info <- rk.XML.dependencies(
 ############
 ## cohen's kappa
 ############
-kappa.var.select <- rk.XML.varselector(label="Select data")
-kappa.var.data <- rk.XML.varslot(label="Data (matrix or data.frame, 2*n or p*p)", source=kappa.var.select, classes=c("data.frame", "matrix"), required=TRUE)
-kappa.var.weights <- rk.XML.varslot(label="Weight matrix (p*p)", source=kappa.var.select, classes="matrix")
+varSelect <- rk.XML.varselector(label="Select data", id.name="varSelect")
+data <- rk.XML.varslot(label="Data (matrix or data.frame, 2*n or p*p)", source=varSelect, classes=c("data.frame", "matrix"), required=TRUE, id.name="data")
+dataWeight <- rk.XML.varslot(label="Weight matrix (p*p)", source=varSelect, classes="matrix", id.name="dataWeight")
 
-kappa.spin.nobs <- rk.XML.spinbox(label="Number of observations (if data is a square matrix)", min=0, real=FALSE)
-kappa.spin.alpha <- rk.XML.spinbox(label="Alpha value for confidence interval", min=0, max=1, initial=0.05)
+nobs <- rk.XML.spinbox(label="Number of observations (if data is a square matrix)", min=0, real=FALSE, id.name="nobs")
+alpha <- rk.XML.spinbox(label="Alpha value for confidence interval", min=0, max=1, initial=0.05, id.name="alpha")
 
-save.results <- rk.XML.saveobj("Save results to workspace", initial="kappa.result")
+saveResults <- rk.XML.saveobj("Save results to workspace", initial="kappa.result", id.name="saveResults")
 
 kappa.full.dialog <- rk.XML.dialog(
   rk.XML.row(
-    kappa.var.select,
+    varSelect,
     rk.XML.col(
-      kappa.var.data,
-      kappa.var.weights,
+      data,
+      dataWeight,
       rk.XML.stretch(),
-      rk.XML.frame(kappa.spin.nobs,
-      kappa.spin.alpha),
-      save.results
+      rk.XML.frame(nobs,
+      alpha),
+      saveResults
     )
-  )
-, label="Cohen's Kappa")
+  ),
+  label="Cohen's Kappa"
+)
 
 ## JavaScript
 kappa.js.calc <- rk.paste.JS(
-   echo("\tkappa.result <- cohen.kappa("),
-  ite(kappa.var.data, echo("\n\t\tx=", kappa.var.data)),
-  ite(kappa.var.weights, echo(",\n\t\tw=", kappa.var.weights)),
-  ite(id(kappa.spin.nobs, " > 0"), echo(",\n\t\tn.obs=", kappa.spin.nobs)),
-  ite(id(kappa.spin.alpha, " != 0.05"), echo(",\n\t\talpha=", kappa.spin.alpha)),
-  echo("\n\t)\n\n")
+  echo("  kappa.result <- cohen.kappa("),
+  js(
+    if(data){
+      echo("\n    x=", data)
+    } else {},
+    if(dataWeight){
+      echo(",\n    w=", dataWeight)
+    } else {},
+    if(nobs > 0){
+      echo(",\n    n.obs=", nobs)
+    } else {},
+    if(alpha != 0.05){
+      echo(",\n    alpha=", alpha)
+    } else {},
+    linebreaks=TRUE
+  ),
+  echo("\n  )\n\n")
 )
 
 kappa.js.print <- rk.paste.JS(
-  echo("\trk.header(\"Correlation coefficients and confidence boundaries\", level=3)\n"),
-  echo("\trk.print(kappa.result[[\"confid\"]])\n"),
-  echo("\trk.print(paste(\"<b>Alpha level:</b>\", kappa.result[[\"plevel\"]]))\n"),
-  echo("\trk.print(paste(\"<b>Number of subjects:</b>\", kappa.result[[\"n.obs\"]]))\n\n")
+  rk.JS.header("Correlation coefficients and confidence boundaries",
+    level=3,
+    .add=list(add=c("Alpha level", alpha))
+  ),
+  echo("rk.print(kappa.result[[\"confid\"]])\n"),
+  echo("rk.print(paste(\"Number of subjects: \", kappa.result[[\"n.obs\"]]))\n\n")
 )
 
 
