@@ -38,9 +38,8 @@ function printout(){
   // printout the results
   new Header(i18n("Cohen's Kappa and weighted Kappa")).print();
 
-  new Header(i18n("Correlation coefficients and confidence boundaries"), 3).add(i18n("Alpha level"), getValue("alpha")).print();
+  new Header(i18n("Correlation coefficients and confidence boundaries"), 3).add(i18n("Alpha level"), getValue("alpha")).add(i18n("Number of subjects"), noquote("kappa.result[[\"n.obs\"]]")).print();
   echo("rk.print(kappa.result[[\"confid\"]])\n");
-  echo("rk.print(paste(\"Number of subjects: \", kappa.result[[\"n.obs\"]]))\n\n");
   //// save result object
   // read in saveobject variables
   var saveResults = getValue("saveResults");
