@@ -78,10 +78,12 @@ kappa.js.calc <- rk.paste.JS(
 kappa.js.print <- rk.paste.JS(
   rk.JS.header("Correlation coefficients and confidence boundaries",
     level=3,
-    .add=list(add=c("Alpha level", alpha))
+    .add=list(
+      add=c("Alpha level", alpha),
+      add=c("Number of subjects", noquote="kappa.result[[\\\"n.obs\\\"]]")
+    )
   ),
-  echo("rk.print(kappa.result[[\"confid\"]])\n"),
-  echo("rk.print(paste(\"Number of subjects: \", kappa.result[[\"n.obs\"]]))\n\n")
+  echo("rk.print(kappa.result[[\"confid\"]])\n")
 )
 
 
