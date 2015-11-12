@@ -1,8 +1,11 @@
 ChangeLog for package rk.CohenKappa
 
-changes in version 0.01-8 (2015-06-29)
+changes in version 0.01-8 (2015-11-12)
 unreleased:
   - this release is under devoplment
+added:
+  - initial i18n (see inst/rkward/po/)
+  - german translation
 changed:
   - updated the generator script
 
