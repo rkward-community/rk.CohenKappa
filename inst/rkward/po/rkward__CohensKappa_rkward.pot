@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://p.sf.net/rkward/bugs\n"
+"POT-Creation-Date: 2015-11-12 22:18+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/rk.CohenKappa.pluginmap:16
+#. i18n: ectx: <about name="...">
+msgid "rk.CohenKappa"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/rk.CohenKappa.pluginmap:16
+#. i18n: ectx: <about shortinfo="...">
+msgid "RKWard GUI to calculate Cohen's Kappa"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/rk.CohenKappa.pluginmap:25
+#. i18n: ectx: <about> <author given="...">
+msgctxt "Author name"
+msgid "Meik"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/rk.CohenKappa.pluginmap:25
+#. i18n: ectx: <about> <author family="...">
+msgctxt "Author name"
+msgid "Michalke"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/rk.CohenKappa.pluginmap:39
+#. i18n: ectx: <components> <component label="...">
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.xml:13
+#. i18n: ectx: (Cohen's Kappa) <dialog label="...">
+msgid "Cohen's Kappa"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.js:39
+#. i18n: ectx: (Loaded from Cohen's Kappa)
+msgid "Cohen's Kappa and weighted Kappa"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.js:41
+#. i18n: ectx: (Loaded from Cohen's Kappa)
+msgid "Correlation coefficients and confidence boundaries"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.js:41
+#. i18n: ectx: (Loaded from Cohen's Kappa)
+msgid "Alpha level"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.js:41
+#. i18n: ectx: (Loaded from Cohen's Kappa)
+msgid "Number of subjects"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.xml:15
+#. i18n: ectx: (Cohen's Kappa) <dialog label="Cohen's Kappa"> <varselector label="...">
+msgid "Select data"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.xml:17
+#. i18n: ectx: (Cohen's Kappa) <dialog label="Cohen's Kappa"> <varslot label="...">
+msgid "Data (matrix or data.frame, 2*n or p*p)"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.xml:18
+#. i18n: ectx: (Cohen's Kappa) <dialog label="Cohen's Kappa"> <varslot label="...">
+msgid "Weight matrix (p*p)"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.xml:21
+#. i18n: ectx: (Cohen's Kappa) <dialog label="Cohen's Kappa"> <spinbox label="...">
+msgid "Number of observations (if data is a square matrix)"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.xml:22
+#. i18n: ectx: (Cohen's Kappa) <dialog label="Cohen's Kappa"> <spinbox label="...">
+msgid "Alpha value for confidence interval"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/plugins/CohensKappa.xml:24
+#. i18n: ectx: (Cohen's Kappa) <dialog label="Cohen's Kappa"> <saveobject label="...">
+msgid "Save results to workspace"
+msgstr ""
+
+#. i18n: file: /home/m/daten/R/rkward_plugins/git/rk.CohenKappa/inst/rkward/rk.CohenKappa.pluginmap:48
+#. i18n: ectx: <hierarchy> <menu label="...">
+msgid "Analysis"
+msgstr ""
