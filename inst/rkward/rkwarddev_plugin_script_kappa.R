@@ -69,8 +69,7 @@ kappa.js.calc <- rk.paste.JS(
     } else {},
     if(alpha != 0.05){
       echo(",\n    alpha=", alpha)
-    } else {},
-    linebreaks=TRUE
+    } else {}
   ),
   echo("\n  )\n\n")
 )
