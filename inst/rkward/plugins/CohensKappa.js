@@ -1,5 +1,5 @@
 // this code was generated using the rkwarddev package.
-//perhaps don't make changes here, but in the rkwarddev script instead!
+// perhaps don't make changes here, but in the rkwarddev script instead!
 
 
 
@@ -10,7 +10,6 @@ function preprocess(){
 
 function calculate(){
   // read in variables from dialog
-
   var data = getString("data");
   var dataWeight = getString("dataWeight");
   var nobs = getString("nobs");
@@ -21,16 +20,16 @@ function calculate(){
   echo("  kappa.result <- cohen.kappa(");
   if(data) {
     echo("\n    x=" + data);  
-  }
+  } else {}
   if(dataWeight) {
     echo(",\n    w=" + dataWeight);  
-  }
+  } else {}
   if(nobs > 0) {
     echo(",\n    n.obs=" + nobs);  
-  }
+  } else {}
   if(alpha != 0.05) {
     echo(",\n    alpha=" + alpha);  
-  }
+  } else {}
   echo("\n  )\n\n");
 }
 
@@ -48,7 +47,7 @@ function printout(){
   // assign object to chosen environment
   if(saveResultsActive) {
     echo(".GlobalEnv$" + saveResults + " <- kappa.result\n");
-  }
+  } else {}
 
 }
 

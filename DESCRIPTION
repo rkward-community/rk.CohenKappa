@@ -13,3 +13,4 @@ License: GPL (>= 3)
 LazyLoad: yes
 URL: https://rkward.kde.org
 Authors@R: person(given="Meik", family="Michalke", email="meik.michalke@hhu.de", role=c("aut", "cre"))
+RoxygenNote: 5.0.1

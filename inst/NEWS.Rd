@@ -1,5 +1,19 @@
 \name{NEWS}
 \title{News for Package 'rk.CohenKappa'}
+\section{Changes in rk.CohenKappa version 0.01-8 (2015-11-12)}{
+  \subsection{added}{
+    \itemize{
+      \item plugin is now translatable (see inst/rkward/po/)
+      \item german translation
+    }
+  }
+  \subsection{changed}{
+    \itemize{
+      \item updated the generator script
+      \item rebuilt with rkwarddev 0.08-1
+    }
+  }
+}
 \section{Changes in rk.CohenKappa version 0.01-7 (2015-03-14)}{
   \subsection{fixed}{
     \itemize{
