@@ -1,5 +1,7 @@
 # rk.CohenKappa
 
+[![Flattr this git repo](https://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=tfry&url=https://github.com/rkward-community/rk.CohenKappa&title=rk.CohenKappa&language=en_GB&tags=github&category=software)
+
 This R package provides a GUI to calculate Cohen's Kappa.
 
 ![rk.CohenKappa main tab](/inst/screenshots/main_tab.png?raw=true "rk.CohenKappa main tab")
