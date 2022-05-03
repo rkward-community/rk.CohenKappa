@@ -1,7 +1,7 @@
 Package: rk.CohenKappa
 Type: Package
 Title: RKWard GUI to calculate Cohen's Kappa
-Version: 0.01-9
+Version: 0.2-1
 Date: 2022-05-03
 Author: Meik Michalke
 Maintainer: Meik Michalke <meik.michalke@hhu.de>
