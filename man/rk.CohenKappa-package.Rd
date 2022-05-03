@@ -2,29 +2,36 @@
 % Please edit documentation in R/rk.CohenKappa-package.R
 \docType{package}
 \name{rk.CohenKappa-package}
+\alias{rk.CohenKappa}
 \alias{rk.CohenKappa-package}
-\title{The rk.CohenKappa Package}
+\title{\packageTitle{rk.CohenKappa}}
 \description{
-RKWard GUI to calculate Cohen's Kappa.
+\packageDescription{rk.CohenKappa}
 }
 \details{
+The DESCRIPTION file:
 \tabular{ll}{
 Package: \tab rk.CohenKappa\cr
 Type: \tab Package\cr
-Version: \tab 0.01-8\cr
-Date: \tab 2015-11-11\cr
+Version: \tab 0.01-9\cr
+Date: \tab 2022-05-03\cr
 Depends: \tab rkward (>= 0.6.0)\cr
 Enhances: \tab rkward\cr
+Encoding: \tab UTF-8\cr
 License: \tab GPL (>= 3)\cr
 LazyLoad: \tab yes\cr
 URL: \tab https://rkward.kde.org\cr
 }
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://rkward.kde.org}
+}
 
-RKWard GUI to calculate Cohen's Kappa, i.e.,
-      the agreement of two raters (using the psych package)
 }
 \author{
-Meik Michalke
-}
-\keyword{package}
+\packageAuthor{rk.CohenKappa}
 
+Maintainer: \packageMaintainer{rk.CohenKappa}
+}
