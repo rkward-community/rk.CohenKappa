@@ -17,8 +17,8 @@
     name="rk.CohenKappa"
     shortinfo="RKWard GUI to calculate Cohen's Kappa"
     longinfo="RKWard GUI to calculate Cohen's Kappa, i.e., the agreement of two raters (using the psych package)"
-    version="0.01-8"
-    releasedate="2015-12-18"
+    version="0.01-9"
+    releasedate="2022-05-03"
     url="https://rkward.kde.org"
     license="GPL (&gt;= 3)"
   >

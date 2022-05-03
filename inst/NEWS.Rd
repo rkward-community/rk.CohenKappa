@@ -1,6 +1,14 @@
 \name{NEWS}
 \title{News for Package 'rk.CohenKappa'}
-\section{Changes in rk.CohenKappa version 0.01-8 (2015-11-12)}{
+\encoding{UTF-8}
+\section{Changes in rk.CohenKappa version 0.01-9 (2022-05-03)}{
+  \subsection{fixed}{
+    \itemize{
+      \item screenshot URL and removed flattr-link in README.md
+    }
+  }
+}
+\section{Changes in rk.CohenKappa version 0.01-8 (2015-12-18)}{
   \subsection{added}{
     \itemize{
       \item plugin is now translatable (see inst/rkward/po/)
